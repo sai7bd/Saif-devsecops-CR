@@ -99,8 +99,8 @@ pipeline {
           }
       }
     // stage('Deploy to Dev') {
-    //   environment {
-    //     AUTH_TOKEN = credentials('argocd-deployer-token')
+      environment {
+         AUTH_TOKEN = credentials('argocd-deployer-token')
     //         }
     //     steps {
     //         container('argocli') {
