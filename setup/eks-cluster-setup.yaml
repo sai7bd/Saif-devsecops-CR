@@ -1,0 +1,21 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: dev-secops-cluster
+  region: us-east-1
+  version: "1.28"
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t3a.large
+    desiredCapacity: 2
+    volumeSize: 20
+    ssh:
+      allow: true # will use ~/.ssh/id_rsa.pub as the default ssh key
+  - name: ng-2
+    instanceType: t3a.xlarge
+    desiredCapacity: 2
+    volumeSize: 20
+    ssh:
+      publicKeyPath: ~/.ssh/id_rsa.pub
