@@ -1,7 +1,7 @@
 pipeline {
-  environment {
-        ARGO_SERVER = '3.222.215.247:32100'
-        }
+ // environment {
+     //   ARGO_SERVER = '3.222.215.247:32100'
+       // }
   agent {
     kubernetes {
       yamlFile 'build-agent.yaml'
@@ -99,8 +99,8 @@ pipeline {
           }
       }
     // stage('Deploy to Dev') {
-      environment {
-         AUTH_TOKEN = credentials('argocd-deployer-token')
+    //  environment {
+    //     AUTH_TOKEN = credentials('argocd-deployer-token')
     //         }
     //     steps {
     //         container('argocli') {

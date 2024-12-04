@@ -60,7 +60,7 @@ cat <<EOF > trust-policy.json
     {
       "Effect": "Allow",
       "Principal": {
-        "Federated": "arn:aws:iam::909293070315:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/A9AE7E1083947032F5CE5B577FF74DF2"
+        "Federated": "arn:aws:iam::747031328127:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/A9AE7E1083947032F5CE5B577FF74DF2"
       },
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
@@ -80,8 +80,8 @@ $ aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/service-role/A
 ```
 RefL https://repost.aws/knowledge-center/eks-persistent-storage
 
-
-$ aws eks create-addon --cluster-name dev-secops-cluster --addon-name aws-ebs-csi-driver --service-account-role-arn arn:aws:iam::909293070315:role/AmazonEKS_EBS_CSI_DriverRole
+ß
+$ aws eks create-addon --cluster-name dev-secops-cluster --addon-name aws-ebs-csi-driver --service-account-role-arn arn:aws:iam::747031328127:role/AmazonEKS_EBS_CSI_DriverRole
 
 
 
