@@ -380,6 +380,23 @@ eksctl delete cluster --name=dev-secops-cluster --region=us-east-1
 # Pipeline
 
 Refer the below screenshot for the stages in the pipeline
+dssssssssss++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##### Pipeline View
 
