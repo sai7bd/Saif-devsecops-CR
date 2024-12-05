@@ -70,7 +70,7 @@ pipeline {
          stage('OCI image build') {
           steps {
             container('kaniko') {
-              sh '/kaniko/executor --docker-username=sai7bd --docker-password=Saif!97989 --destination=docker.io/sai7bd/dso-demo --verbosity=debug' 
+              sh '/kaniko/executor --docker-username=sai7bd --docker-password=Saif!97989 --destination=docker.io/sai7bd/dso-demo' 
               }
             }
           }
